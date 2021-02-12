@@ -70,17 +70,7 @@ MODULES = [
     'voting',
 ]
 
-APIS = {
-    'authentication': 'https://pruebadefensadecide.herokuapp.com',
-    'base': 'https://pruebadefensadecide.herokuapp.com',
-    'booth': 'https://pruebadefensadecide.herokuapp.com',
-    'census': 'https://pruebadefensadecide.herokuapp.com',
-    'mixnet': 'https://pruebadefensadecide.herokuapp.com',
-    'postproc': 'https://pruebadefensadecide.herokuapp.com',
-    'store': 'https://pruebadefensadecide.herokuapp.com/',
-    'visualizer': 'https://pruebadefensadecide.herokuapp.com',
-    'voting': 'https://pruebadefensadecide.herokuapp.com',
-}
+APIS = {}
 
 BASEURL = 'https://pruebadefensadecide.herokuapp.com'
 
