@@ -73,7 +73,19 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
+BASEURL = 'https://examenfragomagu.herokuapp.com/'
+
+APIS = {
+    'authentication': 'https://pruebadefensadecide.herokuapp.com',
+    'base': 'https://pruebadefensadecide.herokuapp.com',
+    'booth': 'https://pruebadefensadecide.herokuapp.com',
+    'census': 'https://pruebadefensadecide.herokuapp.com',
+    'mixnet': 'https://pruebadefensadecide.herokuapp.com',
+    'postproc': 'https://pruebadefensadecide.herokuapp.com',
+    'store': 'https://pruebadefensadecide.herokuapp.com/',
+    'visualizer': 'https://pruebadefensadecide.herokuapp.com',
+    'voting': 'https://pruebadefensadecide.herokuapp.com',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -183,3 +195,5 @@ if os.path.exists("config.jsonnet"):
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+import django_heroku
+django_heroku.settings(locals())
